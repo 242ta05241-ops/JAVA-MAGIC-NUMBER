@@ -1,0 +1,29 @@
+public class Main
+{
+	public static void main(String[] args)
+	{
+	    int n=172;
+	    int rev;
+	    int temp=n;
+	    while(n>9)
+	    {
+	        int sum=0;
+	        while(n>0)
+	        {
+	            rev=n%10;
+	            sum=sum+rev;
+	            n/=10;
+	        }
+	        n=sum;
+	    }
+	    if(n==1)
+	    {
+	        System.out.println(temp+"\tmagic number");
+	    }
+	    else
+	    {
+	        System.out.println(temp+"\t is not a magic number");
+	        
+	    }
+	}
+}
